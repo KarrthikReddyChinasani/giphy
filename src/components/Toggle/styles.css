@@ -1,0 +1,7 @@
+.custom-classname.react-toggle--checked .react-toggle-track {
+  background-color: linear-gradient(to right, red , yellow);
+}
+
+.custom-classname .react-toggle-track {
+  background-color: linear-gradient(to right, red , yellow);
+}

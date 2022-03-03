@@ -1,0 +1,13 @@
+.searchbar {
+  height: 40px;
+  width: 400px;
+  background-color: var(--search-bar-color);
+  outline: none;
+  -webkit-appearance: none; 
+  box-shadow: none !important;
+  color: var(--text-color);
+  border: none;
+  border-radius: 20px;
+  padding: 4px 16px;
+  box-sizing: border-box;
+}

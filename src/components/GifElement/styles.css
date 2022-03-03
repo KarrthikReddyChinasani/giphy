@@ -1,0 +1,25 @@
+.gifWrapper {
+  border-radius: 10px;
+  position: relative;
+  max-width: 100%;
+}
+
+.buttonWrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: var(--background-color);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWrapper svg {
+  fill: var(--monochrome-contrast);
+  width: 20px;
+  height: 20px;
+}
