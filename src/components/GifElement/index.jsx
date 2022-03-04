@@ -5,7 +5,7 @@ import Pause from '../svg/pause';
 
 import "./styles.css";
 
-const GifElement = memo(({ gif, id }) => {
+const GifElement = memo(({ gif, id, user }) => {
   let freezeEle = createRef();
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -26,9 +26,12 @@ const GifElement = memo(({ gif, id }) => {
       <div className='buttonWrapper' onClick={handlePlayClick}>
         {isPlaying ? <Pause /> : <Play />}
       </div>
-      <div className='user'>
-        
-      </div>
+      {user && <div className='user'>
+        <img src={user?.avatar_url} className='avatar'/>
+        <div className='user-name'>
+          <p>{user?.display_name}</p>
+        </div>
+      </div>}
     </div>
   )
 })

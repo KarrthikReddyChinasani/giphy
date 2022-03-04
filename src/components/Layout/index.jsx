@@ -78,7 +78,7 @@ const Layout = () => {
         columnClassName="my-masonry-grid_column">
         {
           gifsList.map((gif, index) => {
-            return <GifElement key={gif.id} gif={gif.images.downsized.url} id={gif.id} />
+            return <GifElement key={gif.id} gif={gif.images.downsized.url} id={gif.id} user={gif.user}/>
           })
         }
       </Masonry>

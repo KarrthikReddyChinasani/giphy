@@ -21,6 +21,7 @@ const Header = () => {
       document.documentElement.style.setProperty('--header-color', '#333333');
       document.documentElement.style.setProperty('--search-bar-color', '#666666');
       document.documentElement.style.setProperty('--monochrome-contrast', '#FFFFFF');
+      document.documentElement.style.setProperty('--shadow', '255, 255, 255');
     }
     if(theme === "light") {
       document.documentElement.style.setProperty('--background-color', '#FFFFFF');
@@ -28,6 +29,7 @@ const Header = () => {
       document.documentElement.style.setProperty('--header-color', '#999999');
       document.documentElement.style.setProperty('--search-bar-color', '#e6e6e6');
       document.documentElement.style.setProperty('--monochrome-contrast', '#000000');
+      document.documentElement.style.setProperty('--shadow', '0, 0, 0');
     }
   }, [theme])
 

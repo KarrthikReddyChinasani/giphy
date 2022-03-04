@@ -2,6 +2,9 @@
   border-radius: 10px;
   position: relative;
   max-width: 100%;
+  box-shadow: 0px 0px 17px 1px rgba(var(--shadow), 0.7);
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(var(--shadow), 0.7);
+  -moz-box-shadow: 0px 0px 17px 1px rgba(var(--shadow), 0.7);
 }
 
 .buttonWrapper {
@@ -22,4 +25,28 @@
   fill: var(--monochrome-contrast);
   width: 20px;
   height: 20px;
+}
+
+.user {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 24px;
+}
+
+.user-name {
+  padding: 0 12px;
+}
+
+.user-name p{
+  margin: 0;
+  padding: 8px 0 0 0;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 600;
 }
